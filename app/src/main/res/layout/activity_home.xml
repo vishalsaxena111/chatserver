@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context="com.example.vishalsaxena.chatserver.home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="01dp"
+        android:layout_weight="8">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"></ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/et1"
+            android:layout_weight="7"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt1"
+            android:layout_weight="3"
+            android:text="Send"
+            />
+    </LinearLayout>
+
+</LinearLayout>
